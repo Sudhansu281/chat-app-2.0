@@ -18,7 +18,7 @@ app.use(express.json({
 const server = require("http").createServer(app);
 const io = require("socket.io")(server, {
   cors: {
-    origin: "https://chat-app-2-0-1.onrender.com/",
+    origin: "http://localhost:5173",
     methods: ["GET", "POST"],
   },
 });
